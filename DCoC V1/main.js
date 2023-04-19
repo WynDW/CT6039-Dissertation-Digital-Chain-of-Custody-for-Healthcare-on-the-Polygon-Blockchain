@@ -2,7 +2,7 @@ web3 = new Web3(web3.currentProvider);
 
 //JS needs to understand how to link to the smart contract
 var DCoC_Link;
-var contract_Address = "0x2CE767EEf1577a89C26110C3D50056DC9E02D442"; //Past Wyn again here, if deployment isnt working check this contract address matches Remix IDE
+var contract_Address = "INSERTADDRESS"; //Past Wyn again here, if deployment isnt working check this contract address matches Remix IDE
 var contract_ABI = [
 	{
 		"inputs": [
