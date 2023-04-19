@@ -1,0 +1,54 @@
+.container {
+	width: 500px;
+	clear: both;
+	text: bold;
+}
+
+.container {
+	width: 100%;
+	clear: both;
+}
+
+body {background-color: lightslategrey;
+	color: whitesmoke;
+}
+
+div {
+	margin-bottom: 10px;
+}
+
+label {
+	display: inline-block;
+	width: 150px;
+	text-align: right;
+}
+
+input[type="submit"] {
+	background-color: orange;
+	color: white;
+	border: none;
+	padding: 8px 16px;
+	font-size: 16px;
+  }
+  table {
+    border-collapse: collapse;
+    width: 10%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: grey;
+    color: white;
+  }
+  
+  th {
+    background-color: orange;
+    text-align: left;
+    padding: 8px;
+    border: 1px solid black;
+  }
+  
+  td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid black;
+  }
+  

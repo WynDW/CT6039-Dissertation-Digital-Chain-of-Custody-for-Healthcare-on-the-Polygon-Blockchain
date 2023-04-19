@@ -1,0 +1,60 @@
+<html>
+
+<head>
+	<!-- Import Web3 and JQuery APIS-->
+	<script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="webstyle.css">
+
+	<title>DCoC</title>
+	<link rel="stylesheet" type="text/css" href="webstyle.css" </head>
+
+<body>
+	<h1>
+		<center>Welcome to your Digital Chain of Custody</center>
+	</h1>
+	<center>Please see prievious entries here:</center><br><br>
+
+	<!--Dynamic Table depending on the number of entries made to the chain-->
+	<table class="entry-block" id="entries" align-content="center"> 
+		<th>Staff ID</th>
+		<th>Patient ID</th>
+		<th>Hospital</th>
+		<th>Drug Name</th>
+		<th>Drug Dose</th>
+		<th>Location</th>
+		<th>Transaction Time (epoch)</th>		
+	</table>
+	<br><br>
+
+	<b><u>
+			<center>Complete the below fields to add a new entry to the DCoC:</center>
+		</u></b><br><br><br>
+	<div class="container">
+		<center>
+			<form> <!-- Submission Entry for the new data to submit to chain-->
+				<label for="ID"> Staff ID: </label> <!-- Can this auto generate -->
+				<input type="text" id="ID" name="ID"><br><br>
+				<label for="PID"> Patient ID: </label> 
+				<input type="text" id="PID" name="PID"><br><br>
+				<label for="hosp"> Hospital: </label>
+				<input type="text" id="hosp" name="hosp"><br><br>
+				<label for="DrugN"> Drug Name: </label>
+				<input type="text" id="DrugN" name="DrugN"><br><br>
+				<label for="DrugD"> Drug Dosage(mg): </label>
+				<input type="text" id="DrugD" name="DrugD"><br><br>
+				<label for="loc"> Room: </label>
+				<input type="text" id="loc" name="loc"><br><br>
+		</center>
+		</form>
+				<center><input type="submit" value="submit" onclick="upload()"></center>
+				<!-- Previous Wyn here from dubgging, if console refereshes and JS does not work take the button out of the form!-->
+	</div>
+
+</body>
+
+<!-- Link the JS Files-->
+<script src="main.js"> </script>
+<script src="global.js"> </script>
+
+</html>
